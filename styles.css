@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.btn {
+    padding: 1.3em;
+    border: none;
+    border-radius: 10px;
+    background: hsl(158, 36%, 37%);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container,
+.container-second {
+    width: 85%;
+    margin: 2em auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.title,
+.price-new {
+    font-family: "Fraunces", serif;
+}
+
+/* IMAGE */
+.image {
+    background-image: url(./images/image-product-mobile.jpg);
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* HERO */
+.sub-title {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin: 0;
+}
+
+.title {
+    color: hsl(212, 21%, 14%);
+    margin: 0.2em 0;
+}
+
+.description {
+    margin-bottom: 0;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.price-new {
+    font-size: 2em;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+}
+
+.price-old {
+    text-decoration-line: line-through;   
+}
+
+@media (min-width: 650px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .container-second {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .hero {
+        width: 50%;
+    }
+
+    .image {
+        background-image: url(./images/image-product-desktop.jpg);
+        width: 50%;
+        height: 500px;
+        background-size: cover;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}
+
+/* */
