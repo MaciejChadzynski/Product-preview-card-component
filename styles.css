@@ -1,6 +1,9 @@
 body {
     margin: 0;
     box-sizing: border-box;
+}
+
+main {
     background-color: hsl(30, 38%, 92%);
     font-family: "Montserrat", sans-serif;
     color: hsl(228, 12%, 48%);
